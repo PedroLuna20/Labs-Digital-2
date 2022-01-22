@@ -1,0 +1,535 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 E E 3 2
+config CONFIG 4 2007 2007 2 2
+$dist/default/production\Labs_Digital2.X.production.o
+cinit CODE 0 11 11 22 2
+text1 CODE 0 1E7 1E7 4F 2
+text2 CODE 0 18C 18C 5B 2
+text3 CODE 0 123 123 69 2
+text4 CODE 0 236 236 2E 2
+text5 CODE 0 264 264 21 2
+maintext CODE 0 33 33 F0 2
+cstackCOMMON COMMON 1 70 70 7 1
+cstackBANK0 BANK0 1 36 36 7 1
+inittext CODE 0 285 285 13 2
+intentry CODE 0 4 4 A 2
+bssBANK0 BANK0 1 20 20 C 1
+idataBANK0 CODE 0 298 298 A 2
+dataBANK0 BANK0 1 2C 2C A 1
+bssCOMMON COMMON 1 77 77 4 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 3D-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 3D-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 2A2-1FFF 2
+ENTRY 3-3 2
+ENTRY 2A2-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 2A2-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7B-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 2A2-1FFF 2
+STRING 3-3 2
+STRING 2A2-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Labs_Digital2.X.production.o
+11 cinit CODE >499:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+11 cinit CODE >502:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+11 cinit CODE >573:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+12 cinit CODE >574:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+13 cinit CODE >575:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+14 cinit CODE >576:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+15 cinit CODE >577:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+16 cinit CODE >578:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+17 cinit CODE >579:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+18 cinit CODE >580:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+19 cinit CODE >581:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+1A cinit CODE >582:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+1F cinit CODE >586:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+20 cinit CODE >587:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+21 cinit CODE >588:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+22 cinit CODE >589:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+23 cinit CODE >590:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+24 cinit CODE >591:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+25 cinit CODE >592:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+26 cinit CODE >593:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+27 cinit CODE >594:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+28 cinit CODE >595:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+29 cinit CODE >596:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+2A cinit CODE >597:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+2B cinit CODE >600:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+2C cinit CODE >601:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+2D cinit CODE >602:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+2E cinit CODE >603:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+2F cinit CODE >609:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+2F cinit CODE >611:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+30 cinit CODE >612:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+4 intentry CODE >55:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+264 text5 CODE >55:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+264 text5 CODE >57:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+268 text5 CODE >60:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+270 text5 CODE >62:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+271 text5 CODE >63:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+277 text5 CODE >65:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+279 text5 CODE >66:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+27B text5 CODE >67:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+27C text5 CODE >69:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+236 text4 CODE >175:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+236 text4 CODE >178:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+239 text4 CODE >179:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+23A text4 CODE >181:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+23D text4 CODE >182:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+23F text4 CODE >183:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+240 text4 CODE >184:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+241 text4 CODE >185:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+242 text4 CODE >187:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+243 text4 CODE >188:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+245 text4 CODE >190:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+248 text4 CODE >191:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+249 text4 CODE >192:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+24A text4 CODE >193:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+24B text4 CODE >194:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+24C text4 CODE >197:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+252 text4 CODE >198:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+253 text4 CODE >201:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+254 text4 CODE >204:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+255 text4 CODE >205:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+256 text4 CODE >206:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+257 text4 CODE >207:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+258 text4 CODE >208:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+259 text4 CODE >209:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+25A text4 CODE >210:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+25E text4 CODE >213:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+25F text4 CODE >214:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+260 text4 CODE >215:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+261 text4 CODE >216:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+262 text4 CODE >217:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+263 text4 CODE >220:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+123 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+123 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+126 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+12A text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+12D text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+12F text3 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+131 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+135 text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+138 text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+13A text3 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+13E text3 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+140 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+146 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+148 text3 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+149 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+14A text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+14E text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+150 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+154 text3 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+158 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+159 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+15D text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+15F text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+161 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+165 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+169 text3 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+16C text3 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+16F text3 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+170 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+171 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+175 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+177 text3 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+17D text3 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+182 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+185 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+187 text3 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+18B text3 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+18C text2 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+18C text2 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+18F text2 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+193 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+196 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+198 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+19A text2 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+19E text2 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1A1 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1A3 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1A9 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1AB text2 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1AC text2 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1AD text2 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1B1 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1B3 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1B7 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1BB text2 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1BD text2 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1C1 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1C5 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1C8 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1CB text2 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1CC text2 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1D0 text2 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1D2 text2 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1D8 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1DD text2 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1E0 text2 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1E2 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1E6 text2 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+1E7 text1 CODE >222:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+1E7 text1 CODE >224:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+1FC text1 CODE >225:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+20F text1 CODE >226:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+222 text1 CODE >227:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+235 text1 CODE >228:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+33 maintext CODE >73:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+33 maintext CODE >75:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+38 maintext CODE >79:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+3E maintext CODE >81:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+42 maintext CODE >82:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+44 maintext CODE >83:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+4B maintext CODE >84:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+52 maintext CODE >86:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+54 maintext CODE >88:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+55 maintext CODE >89:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+5C maintext CODE >91:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+5E maintext CODE >94:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+62 maintext CODE >96:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+66 maintext CODE >97:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+6A maintext CODE >98:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+71 maintext CODE >99:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+72 maintext CODE >101:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+79 maintext CODE >103:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+7B maintext CODE >104:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+7C maintext CODE >105:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+83 maintext CODE >107:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+85 maintext CODE >108:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+86 maintext CODE >109:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+8D maintext CODE >111:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+8F maintext CODE >112:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+90 maintext CODE >113:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+97 maintext CODE >115:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+99 maintext CODE >116:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+9A maintext CODE >117:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+A1 maintext CODE >119:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+A3 maintext CODE >120:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+A4 maintext CODE >121:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+AB maintext CODE >123:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+AD maintext CODE >124:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+AE maintext CODE >125:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+B5 maintext CODE >127:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+B6 maintext CODE >128:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+B7 maintext CODE >129:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+BC maintext CODE >131:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+BC maintext CODE >133:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+C0 maintext CODE >135:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+C4 maintext CODE >136:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+C8 maintext CODE >137:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+CF maintext CODE >138:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+D0 maintext CODE >139:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+D7 maintext CODE >141:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+D9 maintext CODE >142:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+DA maintext CODE >143:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+E1 maintext CODE >145:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+E3 maintext CODE >146:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+E4 maintext CODE >147:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+EB maintext CODE >149:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+ED maintext CODE >150:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+EE maintext CODE >151:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+F5 maintext CODE >153:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+F7 maintext CODE >154:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+F8 maintext CODE >155:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+FF maintext CODE >157:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+101 maintext CODE >158:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+102 maintext CODE >159:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+109 maintext CODE >161:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+10B maintext CODE >162:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+10C maintext CODE >163:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+113 maintext CODE >165:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+114 maintext CODE >166:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+115 maintext CODE >167:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+11A maintext CODE >168:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+11A maintext CODE >170:C:\Users\LENOVO\MPLABXProjects\Labs_Digital2.X\lab0.c
+285 inittext CODE >547:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+285 inittext CODE >548:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+286 inittext CODE >549:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+287 inittext CODE >550:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+288 inittext CODE >551:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+289 inittext CODE >558:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+289 inittext CODE >559:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+28E inittext CODE >560:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+28F inittext CODE >561:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+290 inittext CODE >562:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+291 inittext CODE >563:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+292 inittext CODE >564:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+293 inittext CODE >565:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+294 inittext CODE >566:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+295 inittext CODE >567:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+296 inittext CODE >568:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+297 inittext CODE >569:C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+___awdiv@counter 37 0 BANK0 1 cstackBANK0 dist/default/production\Labs_Digital2.X.production.o
+__size_of_valores 0 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 2A2 0 ABS 0 - -
+__Hspace_1 7B 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+_TMR0 1 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_WPUB 95 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+_cent 24 0 BANK0 1 bssBANK0 dist/default/production\Labs_Digital2.X.production.o
+_main 66 0 CODE 0 maintext dist/default/production\Labs_Digital2.X.production.o
+_resi 20 0 BANK0 1 bssBANK0 dist/default/production\Labs_Digital2.X.production.o
+_var2 79 0 COMMON 1 bssCOMMON dist/default/production\Labs_Digital2.X.production.o
+_var3 77 0 COMMON 1 bssCOMMON dist/default/production\Labs_Digital2.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+start 1C 0 CODE 0 init C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 38 0 BANK0 1 cstackBANK0 dist/default/production\Labs_Digital2.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 38 0 BANK0 1 cstackBANK0 dist/default/production\Labs_Digital2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_valores 46C 0 CODE 0 text1 dist/default/production\Labs_Digital2.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+___awdiv@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\Labs_Digital2.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\Labs_Digital2.X.production.o
+__end_of___awdiv 318 0 CODE 0 text3 dist/default/production\Labs_Digital2.X.production.o
+__end_of___awmod 3CE 0 CODE 0 text2 dist/default/production\Labs_Digital2.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+___stacklo 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+__size_of_setup 0 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+start_initialization 22 0 CODE 0 cinit dist/default/production\Labs_Digital2.X.production.o
+__pcstackBANK0 36 0 BANK0 1 cstackBANK0 dist/default/production\Labs_Digital2.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 66 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 22 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_PORTBbits 6 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RB0 30 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_RB1 31 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_RB2 32 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__S0 2A2 0 ABS 0 - -
+__S1 7B 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_dec 26 0 BANK0 1 bssBANK0 dist/default/production\Labs_Digital2.X.production.o
+_isr 4C8 0 CODE 0 text5 dist/default/production\Labs_Digital2.X.production.o
+_uni 28 0 BANK0 1 bssBANK0 dist/default/production\Labs_Digital2.X.production.o
+_var 22 0 BANK0 1 bssBANK0 dist/default/production\Labs_Digital2.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__end_of_isr 50A 0 CODE 0 text5 dist/default/production\Labs_Digital2.X.production.o
+_valores 3CE 0 CODE 0 text1 dist/default/production\Labs_Digital2.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\LENOVO\AppData\Local\Temp\xcAs1c4.o
+__pdataBANK0 2C 0 BANK0 1 dataBANK0 dist/default/production\Labs_Digital2.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@counter 37 0 BANK0 1 cstackBANK0 dist/default/production\Labs_Digital2.X.production.o
+___awdiv 246 0 CODE 0 text3 dist/default/production\Labs_Digital2.X.production.o
+___awmod 318 0 CODE 0 text2 dist/default/production\Labs_Digital2.X.production.o
+__pmaintext 66 0 CODE 0 maintext dist/default/production\Labs_Digital2.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/production\Labs_Digital2.X.production.o
+init_fetch0 50A 0 CODE 0 inittext dist/default/production\Labs_Digital2.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 1C 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 5E 0 CODE 0 cinit dist/default/production\Labs_Digital2.X.production.o
+__Hintentry 1C 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 39 0 BANK0 1 cstackBANK0 dist/default/production\Labs_Digital2.X.production.o
+?___awdiv 73 0 COMMON 1 cstackCOMMON dist/default/production\Labs_Digital2.X.production.o
+?___awmod 73 0 COMMON 1 cstackCOMMON dist/default/production\Labs_Digital2.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\Labs_Digital2.X.production.o
+__ptext1 3CE 0 CODE 0 text1 dist/default/production\Labs_Digital2.X.production.o
+__ptext2 318 0 CODE 0 text2 dist/default/production\Labs_Digital2.X.production.o
+__ptext3 246 0 CODE 0 text3 dist/default/production\Labs_Digital2.X.production.o
+__ptext4 46C 0 CODE 0 text4 dist/default/production\Labs_Digital2.X.production.o
+__ptext5 4C8 0 CODE 0 text5 dist/default/production\Labs_Digital2.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_banderas 2A 0 BANK0 1 bssBANK0 dist/default/production\Labs_Digital2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 5E 0 CODE 0 cinit dist/default/production\Labs_Digital2.X.production.o
+___awmod@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\Labs_Digital2.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 530 0 CODE 0 idataBANK0 dist/default/production\Labs_Digital2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Labs_Digital2.X.production.o
+__Hend_init 22 0 CODE 0 end_init -
+init_ram0 512 0 CODE 0 inittext dist/default/production\Labs_Digital2.X.production.o
+__end_of_main 246 0 CODE 0 maintext dist/default/production\Labs_Digital2.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+_TRISE 89 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__end_of_setup 4C8 0 CODE 0 text4 dist/default/production\Labs_Digital2.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Labs_Digital2.X.production.o
+_setup 46C 0 CODE 0 text4 dist/default/production\Labs_Digital2.X.production.o
+_tabla 2C 0 BANK0 1 dataBANK0 dist/default/production\Labs_Digital2.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Labs_Digital2.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\Labs_Digital2.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 22 0 CODE 0 cinit dist/default/production\Labs_Digital2.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\Labs_Digital2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 B 1
+intentry 0 4 8 29E 2
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 1D 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
