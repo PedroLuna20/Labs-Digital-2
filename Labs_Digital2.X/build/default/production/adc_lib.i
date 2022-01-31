@@ -1,4 +1,4 @@
-# 1 "lab0.c"
+# 1 "adc_lib.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,27 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "lab0.c" 2
-# 13 "lab0.c"
-#pragma config FOSC = INTRC_NOCLKOUT
-#pragma config WDTE = OFF
-#pragma config PWRTE = OFF
-#pragma config MCLRE = ON
-#pragma config CP = OFF
-#pragma config CPD = OFF
-#pragma config BOREN = OFF
-#pragma config IESO = OFF
-#pragma config FCMEN = OFF
-#pragma config LVP = OFF
-
-
-#pragma config BOR4V = BOR40V
-#pragma config WRT = OFF
-
-
-
-
-
+# 1 "adc_lib.c" 2
+# 1 "./adc_des.h" 1
+# 13 "./adc_des.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2507,336 +2489,70 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 31 "lab0.c" 2
+# 13 "./adc_des.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 1 3
-# 13 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int8_t;
 
 
-
-
-
-
-typedef signed int int16_t;
-
-
-
-
-
-
-
-typedef __int24 int24_t;
-
-
-
-
-
-
-
-typedef signed long int int32_t;
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint8_t;
-
-
-
-
-
-typedef unsigned int uint16_t;
-
-
-
-
-
-
-typedef __uint24 uint24_t;
-
-
-
-
-
-
-typedef unsigned long int uint32_t;
-# 88 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_least8_t;
-
-
-
-
-
-
-
-typedef signed int int_least16_t;
-# 109 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_least24_t;
-# 118 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed long int int_least32_t;
-# 136 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_least8_t;
-
-
-
-
-
-
-typedef unsigned int uint_least16_t;
-# 154 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_least24_t;
-
-
-
-
-
-
-
-typedef unsigned long int uint_least32_t;
-# 181 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_fast8_t;
-
-
-
-
-
-
-typedef signed int int_fast16_t;
-# 200 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_fast24_t;
-
-
-
-
-
-
-
-typedef signed long int int_fast32_t;
-# 224 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_fast8_t;
-
-
-
-
-
-typedef unsigned int uint_fast16_t;
-# 240 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_fast24_t;
-
-
-
-
-
-
-typedef unsigned long int uint_fast32_t;
-# 268 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef int32_t intmax_t;
-# 282 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef uint32_t uintmax_t;
-
-
-
-
-
-
-typedef int16_t intptr_t;
-
-
-
-
-typedef uint16_t uintptr_t;
-# 32 "lab0.c" 2
-
-
-
-
-int banderas;
-int uni;
-int dec;
-int cent;
-int var;
 int var2;
-int var3;
-int resi;
+int banderas;
+int nib1;
+int nib2;
 
+char tabla[16] = {0b00111111, 0b00000110, 0b01011011, 0b01001111, 0b01100110,
+0b01101101, 0b01111101, 0b00000111, 0b01111111, 0b01101111, 0b01110111, 0b01111100,
+0b00111001, 0b01011110, 0b01111001, 0b01110001};
 
-
-void setup(void);
+void adc_setup(void);
+void adc_function(void);
 int valores(void);
+# 1 "adc_lib.c" 2
 
 
-char tabla[10] = {0b00111111, 0b00000110, 0b01011011, 0b01011011, 0b01100110,
-0b01101101, 0b01111101, 0b01001111, 0b01111111, 0b01101111};
-
-
-void __attribute__((picinterrupt(("")))) isr (void)
+void adc_setup(void)
 {
-    if (INTCONbits.T0IF == 1)
-    {
 
-        if (banderas == 0)
-        {
-            PORTBbits.RB3 = 1;
-            PORTC = (tabla[uni]);
-        }
-    banderas = 0;
-    TMR0 = 237;;
-    INTCONbits.T0IF = 0;
-    }
+    ADCON1bits.ADFM = 0;
+    ADCON1bits.VCFG0 = 0;
+    ADCON1bits.VCFG1 = 0;
+
+    ADCON0bits.ADCS = 0b001;
+    ADCON0bits.CHS = 0b1000;
+    ADCON0bits.ADON = 1;
+    _delay((unsigned long)((50)*(4000000/4000000.0)));
+
 }
 
-
-
-void main(void)
+void adc_function(void)
 {
-    setup();
-
-    while (1)
+    if (PIR1bits.ADIF)
     {
-        if (!PORTBbits.RB0)
-        {
-            while (!RB0);
-            PORTE--;
-            var = PORTE;
-            if (var == 7)
-            {
-                PORTE = 0b100;
-
-            }
-            else if (var == 3)
-            {
-                PORTE = 0b010;
-            }
+        if (ADCON0bits.CHS == 8){
+            PORTD = ADRESH;
+            var2 = PORTD;
         }
-        if (!PORTBbits.RB1)
-        {
-            while (!RB1);
-            PORTA++;
-            var2 = PORTA;
-            PORTBbits.RB4 = 0;
-
-            if (var2 == 3)
-            {
-                PORTA = 4;
-            }
-            else if (var2 == 5)
-            {
-                PORTA = 8;
-            }
-            else if (var2 == 9)
-            {
-                PORTA = 16;
-            }
-            else if (var2 == 17)
-            {
-                PORTA = 32;
-            }
-            else if (var2 == 33)
-            {
-                PORTA = 64;
-            }
-            else if (var2 == 65)
-            {
-                PORTA = 128;
-            }
-            else if (var2 == 129)
-            {
-                PORTA = 256;
-                PORTBbits.RB4 = 1;
-                var = 1;
-
-            }
-        }
-        if (!PORTBbits.RB2)
-        {
-            while (!RB2);
-            PORTD++;
-            var3 = PORTD;
-            PORTBbits.RB5 = 0;
-            if (var3 == 3)
-            {
-                PORTD = 4;
-            }
-            else if (var3 == 5)
-            {
-                PORTD = 8;
-            }
-            else if (var3 == 9)
-            {
-                PORTD = 16;
-            }
-            else if (var3 == 17)
-            {
-                PORTD = 32;
-            }
-            else if (var3 == 33)
-            {
-                PORTD = 64;
-            }
-            else if (var3 == 65)
-            {
-                PORTD = 128;
-            }
-            else if (var3 == 129)
-            {
-                PORTD = 256;
-                PORTBbits.RB5 = 1;
-                var = 2;
-            }
-        }
-        valores ();
+        PIR1bits.ADIF = 0;
     }
-}
+    valores();
 
-
-void setup(void)
-{
-
-    ANSEL = 0;
-    ANSELH = 0;
-
-    TRISA = 0;
-    TRISB = 0b000111;
-    TRISC = 0;
-    TRISD = 0;
-    TRISE = 0;
-
-    OPTION_REGbits.nRBPU = 0;
-    WPUB = 0b111;
-
-    PORTA = 0;
-    PORTB = 0;
-    PORTC = 0;
-    PORTD = 0;
     PORTE = 0;
-
-
-    OSCCONbits.IRCF = 0b0100;
-    OSCCONbits.SCS = 1;
-
-
-    INTCONbits.RBIE = 1;
-
-
-    OPTION_REGbits.T0CS = 0;
-    OPTION_REGbits.T0SE = 0;
-    OPTION_REGbits.PSA = 0;
-    OPTION_REGbits.PS2 = 1;
-    OPTION_REGbits.PS1 = 1;
-    OPTION_REGbits.PS0 = 1;
-    TMR0 = 237;;
-
-
-    INTCONbits.T0IF = 0;
-    INTCONbits.T0IE = 1;
-    INTCONbits.RBIF = 0;
-    INTCONbits.RBIE = 1;
-    INTCONbits.GIE = 1;
-
-    return;
+    if (banderas == 0)
+    {
+        PORTEbits.RE1 = 0;
+        PORTEbits.RE0 = 1;
+        PORTC = (tabla[nib2]);
+        banderas = 1;
+    }
+    else if (banderas == 1)
+    {
+        PORTEbits.RE0 = 0;
+        PORTEbits.RE1 = 1;
+        PORTC = (tabla[nib1]);
+        banderas = 0;
+    }
 }
 
 int valores(void)
 {
-    resi = var%100;
-    uni = resi%10;
-    dec = resi/10;
-    cent = var/100;
+    nib1 = var2%0x10;
+    nib2 = var2/0x10;
 }
